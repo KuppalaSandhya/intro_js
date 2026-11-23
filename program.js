@@ -28,14 +28,14 @@ console.log(score)*/
 const a=10;
  a=20;
  a=30;*/
- /*let exp
+/*let exp
  let num=10;
  a=20;
  a=30;
  a=40;
  console.log(a)
  let a=50*/
- /*even odd
+/*even odd
  const number=40
  if (number%2===0)
  {
@@ -79,14 +79,11 @@ const result=studentMarks>40?"pass":"fail";
 console.log(`the result is ${result}`);
 
 */
-const marks =30;
-if(marks<40)
-{
-   result=marks;
-   console.log("fail")
-}
-else
-{
-    result=marks;
-    cobsole.log("paass")
+const marks = 30;
+if (marks === 30) {
+  result = marks;
+  console.log("fail");
+} else {
+  result = marks;
+  cobsole.log("paass");
 }
