@@ -1,0 +1,11 @@
+console.log(filterBelow([6, 2, 3, 1, 4, 7], 3)); //=> [2, 1]
+console.log(filterBelow([1, 2, 3], 0)); //=> []
+
+function filterBelow(array, threshold) {
+  const filteredArray = [];
+
+  for (i = 0; i < array.length; i++) {
+    if (threshold > array[i]) filteredArray.push(array[i]);
+  }
+  return filteredArray;
+}

@@ -1,0 +1,12 @@
+console.log(reverse([1, 2, 3])); // [3, 2, 1]
+console.log(reverse([])); // []
+
+function reverse(array) {
+  const reverseArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    reverseArray.unshift(array[i]);
+  }
+
+  return reverseArray;
+}

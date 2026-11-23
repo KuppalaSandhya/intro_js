@@ -1,0 +1,16 @@
+//["Anu", "Meera", "Vikram"];
+const students = [
+  {name: "Anu", marks: 80},
+  {name: "Rahul", marks: 65},
+  {name: "Meera", marks: 91},
+  {name: "Vikram", marks: 72},
+];
+
+function getStudentsAbove70(students) {
+  const studentsName = [];
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].marks > 70) studentsName.push(students[i].name);
+  }
+  console.log(studentsName);
+}
+getStudentsAbove70(students);

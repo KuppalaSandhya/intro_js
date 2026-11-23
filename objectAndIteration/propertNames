@@ -1,0 +1,100 @@
+const rectangle = {
+  width: 100,
+  height: 50,
+  color: "red",
+};
+// 2.propertyNames
+// for (const keys in rectangle) {
+//   console.log(keys);
+// }
+
+// 3.propertyNamesAndValues
+// for (const keys in rectangle) {
+//   console.log(keys, rectangle[keys]);
+// }
+
+//AnotherAproach
+// for (const [keys, values] of Object.entries(rectangle)) {
+//   console.log(keys, values);
+// }
+
+//4.Sum the Values
+// const scores = {
+//   Anu: 10,
+//   Rahul: 40,
+//   Meera: 30,
+// };
+
+// let sum = 0;
+// for (const values of Object.values(scores)) {
+//    sum += values;
+// }
+
+// console.log(sum);
+
+//5.Count the properties
+// const device = {
+//   brand: "Acme",
+//   model: "X1",
+//   year: 2025,
+//   working: true,
+// };
+// console.log(Object.keys(device).length);
+
+//6.Iterate over an array
+//const numbers = [10, 20, 30, 40, 50];
+// for (const values of numbers) {
+//   console.log(values);
+// }
+
+// for (const keys in numbers) {
+//   console.log(keys);
+// }
+
+//7.Work with entries
+// const prices = {
+//   apple: 20,
+//   banana: 10,
+//   orange: 15,
+// };
+
+// // for (const [fruits, price] of Object.entries(prices)) {
+// //   console.log(fruits, price);
+// // }
+// //anotherApproach
+// for (const fruits of Object.keys(prices)) {
+//   console.log(fruits, prices[fruits]);
+// }
+
+//8.expensive item#
+
+const prices = {
+  apple: 20,
+  banana: 10,
+  orange: 15,
+  mango: 40,
+};
+let expensiveFruit = 0;
+let expensiveItemCost = 0;
+for (const [fruits, price] of Object.entries(prices)) {
+  if (expensiveItemCost < price) {
+    expensiveItemCost = price;
+    expensiveFruit = fruits;
+  }
+}
+console.log(expensiveFruit, expensiveItemCost);
+
+//10.final challenge
+// const inventory = {
+//   pencils: 12,
+//   notebooks: 5,
+//   erasers: 8,
+// };
+
+// let total = 0;
+
+// for (const [stationary, quantity] of Object.entries(inventory)) {
+//   console.log(stationary, quantity);
+//   total += quantity;
+// }
+// console.log("total", total);

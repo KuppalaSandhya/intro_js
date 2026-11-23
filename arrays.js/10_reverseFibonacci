@@ -1,0 +1,29 @@
+// function reverseFibonacci(noOfElement) {
+//   if (noOfElement === 0) return [];
+//   if (noOfElement === 1) return [0];
+
+//   const array = [1, 0];
+
+//   for (i = -3; i >= -noOfElement; i--) {
+//     const sum = array.at(i + 2) + array.at(i + 1);
+//     array.unshift(sum);
+//   }
+//   return array;
+// }
+
+function reverseFibonacci(noOfElement) {
+  if (noOfElement === 0) return [];
+  if (noOfElement === 1) return [0];
+
+  const array = [1, 0];
+
+  for (i = 2; i < noOfElement; i++) {
+    const sum = array[0] + array[1];
+    array.unshift(sum);
+  }
+
+  return array;
+}
+console.log(reverseFibonacci(0));
+console.log(reverseFibonacci(1));
+console.log(reverseFibonacci(5)); //[3, 2, 1, 1, 0]

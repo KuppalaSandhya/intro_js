@@ -1,0 +1,10 @@
+console.log(mapLengths(["apple", "cat", "Four"])); // => [5, 3, 4]
+
+function mapLengths(words) {
+  const wordLength = [];
+  for (i = 0; i < words.length; i++) {
+    wordLength.push(words[i].length);
+  }
+
+  return wordLength;
+}

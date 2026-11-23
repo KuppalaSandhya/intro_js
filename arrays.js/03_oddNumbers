@@ -1,0 +1,14 @@
+console.log(selectOdds([3, 2, 4, 5, 7])); //=> [3, 5, 7]
+console.log(selectOdds([2, 4, 6])); //=> []
+
+function selectOdds(numbers) {
+  const oddNumbers = [];
+
+  for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+      oddNumbers.push(numbers[i]);
+    }
+  }
+
+  return oddNumbers;
+}
